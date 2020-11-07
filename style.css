@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+body {
+    background: url("img.jpg") no-repeat fixed ; 
+    background-size: cover;
+    display: flex;
+    width: 100vw;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    overflow: visible;
+    /* font-family: 'Xanh Mono', monospace;; */
+    font-family: 'Syne Tactile', cursive;
+
+    } 
+.container { 
+       background-color: whitesmoke;
+       opacity: 0.8;
+       width: 50vw;
+       margin-top: 25px;
+       display: flex;
+       flex-direction: column;
+       border: none;
+       outline: none;
+       box-shadow: 2px 3px 3px black;
+       border-radius: 10px;
+
+}
+
+ form {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 30px 0px 30px;
+     }
+.item1 {
+         text-align: center;
+         padding-top: 30px;
+         width: 100%;
+}
+input[type = text], select { 
+       border:  none;
+       outline: none;
+       border-bottom: 2px solid black;
+       width: 100%;
+       padding: 7px;
+       background-color: transparent;
+}
+input[type = text]:focus, select:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #123B3C ;
+    background-color: white;
+}
+
+
+#btn {
+    width: 70%;
+    align-self: center;
+    padding: 10px;
+    background-color: #123B3C;
+    opacity: 1;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#demo { color: white;
+        font-size: 16px;
+        opacity: 1;
+        margin-top: 10px;
+        padding: 5px;
+     }
+
+@media screen and (max-width:600px) {
+    .container { width: 70vw;
+                height: 600px;}
+    #demo {
+        margin-top: 0px;
+        padding: 2px;
+     }
+     form {
+        padding: 10px;
+       }
+
+
+}
